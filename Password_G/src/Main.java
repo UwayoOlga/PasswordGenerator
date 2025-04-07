@@ -3,14 +3,29 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("How long do you want your password to be (Characters) ?");
-        int digit = input.nextInt();
+        int digit = 0;
+ 
+        while (true) {
+            System.out.println("How long do you want your password to be (Characters)?");
+            try {
+                digit = input.nextInt();
+                if (digit <= 0) {
+                    System.out.println("Please enter a positive number greater than 0.");
+                } else {
+                    break;  
+                }
+            } catch (Exception e) {
+                System.out.println("Invalid input! Please enter a whole number.");
+                input.nextLine();  
+            }
+        }
+
         String lower_cases = "qwertyuiopasdfghjklzxcvbnm";
         String upper_cases = "QWERTYUIOPASDFGHJKLZXCVBNM";
         String symbols = "!@#$%^&*()_+-=[]{}|;:,.<>?";
 
         StringBuilder password = new StringBuilder();
-        for(int i = 0; i < digit; i++) {
+        for (int i = 0; i < digit; i++) {
             int rand = (int)(4 * Math.random());
             switch(rand) {
                 case 0:
@@ -26,10 +41,12 @@ public class Main {
                     break;
                 case 3:
                     rand = (int)(symbols.length() * Math.random());
-                    password.append(symbols.charAt(rand));  
+                    password.append(symbols.charAt(rand)); 
                     break;
             }
         }
-        System.out.println(password);
+
+        System.out.println("Generated password: " + password);
+        input.close();
     }
 }
