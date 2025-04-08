@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="dist/output.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1 >head
-        Hello world!
-      </h1>
-    
+   <div id="outerdiv"> 
+    <h1 style="padding-left: 50px;">Generate Your Password</h1>
+    <div> 
+        <input id="display" type="text" value="Generated Password Here" readonly> 
+        <div id="copyicon">
+            <img id="icon" src="clipboard-line.svg" alt="Clipboard Icon">
+        </div>
+    </div>
+    <div>
+        <label for="length">Enter password length:</label>
+        <input type="number" id="length" value="12" min="1">
+        <label for="uppercase">Include uppercase letters:</label>
+        <input type="checkbox" id="uppercase" checked>
+        <label  for="lowercase">Include lowercase letters:</label>
+            <input type="checkbox" id="lowercase" checked>
+            
+            <label for="numbers">Include numbers:</label>
+            <input type="checkbox" id="numbers"> 
+        <label for="symbols">Include symbols:</label>
+            <input type="checkbox" id="symbols"> 
+        </div>
+        <div>
+            <button id="generate" type="submit">Generate password</button>
+
+
+        </div> 
+    </div>
+</div>
 </body>
 </html>

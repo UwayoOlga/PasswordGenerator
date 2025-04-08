@@ -1,0 +1,84 @@
+body{
+    background-color: #DD7CC6;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;      
+    margin: 0; 
+    font-family: "Bree Serif", serif;
+    font-size: 16px;  
+    font-weight: bold;  
+    color: white;
+}
+#outerdiv{
+    width: 450px;
+    height: 450px;
+    background-color: #A70A8A; 
+    border-radius: 20px;
+
+}
+#display{
+    position: relative;
+    height: 25px;
+    width: 350px;
+    margin-left: 40px;
+    background-color: #670450;
+    display: inline-block; 
+    color: #DD7CC6;
+}
+#copyicon{
+    
+    transform: translateY(-117%);
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    background-color: #DD7CC6;
+    margin-left: 364px;
+    margin-top: 0px;
+}
+#icon{
+    width: 28px;
+    height: 24px;
+}
+label{
+    margin-left: 40px; 
+    font-size: medium;
+}
+ #length{
+    margin-top: 30px;
+    width: 30px;
+    margin-left: 150px;
+
+ }
+  
+ #uppercase{
+    margin-left: 155px;
+    margin-top: 20px;
+ }
+  
+  #lowercase{
+    margin-left: 156px;
+    margin-top: 20px;
+  }
+  #numbers{
+    margin-left: 210px;
+    margin-top: 20px;
+  }
+  #symbols{
+    margin-left: 215px;
+    margin-top: 20px;
+  }
+  #generate{
+    background-color: #DD7CC6;
+    color: #24041c;
+    font-family: "Bree Serif", serif;
+    font-size: larger; 
+    font-weight: bold; 
+    height: 35px;
+    width: 350px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 1px;
+  }
