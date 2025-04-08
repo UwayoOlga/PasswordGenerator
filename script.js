@@ -1,5 +1,4 @@
  
-
 document.addEventListener('DOMContentLoaded', () => {
     const display = document.getElementById('display');
     const lengthInput = document.getElementById('length');

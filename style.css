@@ -2,19 +2,35 @@ body{
     background-color: #DD7CC6;
     margin: 0;
     display: flex;
-    justify-content: center; 
-    align-items: center;     
-    min-height: 100vh;      
-    margin: 0; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
     font-family: "Bree Serif", serif;
-    font-size: 16px;  
-    font-weight: bold;  
+    font-size: 16px;
+    font-weight: bold;
     color: white;
+    background-image: linear-gradient(to top left, #DD7CC6, #A70A8A);  
+    background-size: 200% 200%;  
+    animation: gradientShift 10s ease infinite;
 }
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 100%;  
+    }
+    50% {
+        background-position: 100% 0%; 
+    }
+    100% {
+        background-position: 0% 100%;  
+    }
+}
+
 #outerdiv{
     width: 450px;
     height: 450px;
-    background-color: #A70A8A; 
+    background-color: #A70A8A;
     border-radius: 20px;
 
 }
@@ -24,7 +40,7 @@ body{
     width: 350px;
     margin-left: 40px;
     background-color: #670450;
-    display: inline-block; 
+    display: inline-block;
     color: #ffe6fa;
 }
 #copyicon{
@@ -38,14 +54,14 @@ body{
     margin-top: 0px;
 }
 #copyicon:hover {
-    background-color: #fdaced;  
+    background-color: #fdaced;
 }
 #icon{
     width: 28px;
     height: 24px;
 }
 label{
-    margin-left: 40px; 
+    margin-left: 40px;
     font-size: medium;
 }
  #length{
@@ -54,12 +70,12 @@ label{
     margin-left: 150px;
 
  }
-  
+
  #uppercase{
     margin-left: 155px;
     margin-top: 20px;
  }
-  
+
   #lowercase{
     margin-left: 156px;
     margin-top: 20px;
@@ -76,8 +92,8 @@ label{
     background-color: #DD7CC6;
     color: #24041c;
     font-family: "Bree Serif", serif;
-    font-size: larger; 
-    font-weight: bold; 
+    font-size: larger;
+    font-weight: bold;
     height: 35px;
     width: 350px;
     margin-left: 40px;
@@ -88,5 +104,5 @@ label{
     border: 1px;
   }
   #generate:hover {
-    background-color: #fdaced;  
+    background-color: #fdaced;
 }
