@@ -25,10 +25,10 @@ body{
     margin-left: 40px;
     background-color: #670450;
     display: inline-block; 
-    color: #DD7CC6;
+    color: #ffe6fa;
 }
 #copyicon{
-    
+    cursor: pointer;
     transform: translateY(-117%);
     position: absolute;
     width: 30px;
@@ -36,6 +36,9 @@ body{
     background-color: #DD7CC6;
     margin-left: 364px;
     margin-top: 0px;
+}
+#copyicon:hover {
+    background-color: #fdaced;  
 }
 #icon{
     width: 28px;
@@ -79,6 +82,11 @@ label{
     width: 350px;
     margin-left: 40px;
     margin-top: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     border-radius: 10px;
     border: 1px;
   }
+  #generate:hover {
+    background-color: #fdaced;  
+}
